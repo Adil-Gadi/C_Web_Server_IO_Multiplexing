@@ -87,16 +87,20 @@ int main(void) {
 
             if (isReadSocket) {
                 char buffer[1024];
+                LOG("Receiving...");
                 const size_t req_size = recv(i, &buffer, sizeof(buffer), 0);
                 // printf("Res Size: %lu\n", req_size);
                 FD_SET(i, &write_fds);
-                printf("FD_ISSET, %d\n", FD_ISSET(i, &write_fds));
+                // printf("FD_ISSET, %d\n", FD_ISSET(i, &write_fds));
+                LOG("Received.");
                 FD_CLR(i, &read_fds);
 
                 char response[128];
                 snprintf(response, sizeof(response), "HTTP/1.0 200 OK\r\nContent-Type: text/plain\r\n\r\nFrom server");
                 response[sizeof(response) - 1] = 0;
+                LOG("Sending...");
                 send(i, &response, strlen(response), 0);
+                LOG("Sent.");
                 FD_CLR(i, &write_fds);
                 close(i);
             }

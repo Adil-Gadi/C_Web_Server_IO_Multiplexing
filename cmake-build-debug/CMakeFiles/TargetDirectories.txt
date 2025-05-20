@@ -1,3 +1,4 @@
-/Users/adilgadi/Desktop/CPP Projects/C_Web_Server_IO_Multiplexing/cmake-build-debug/CMakeFiles/C_Web_Server_IO_Multiplexing.dir
+/Users/adilgadi/Desktop/CPP Projects/C_Web_Server_IO_Multiplexing/cmake-build-debug/CMakeFiles/C_Web_Server_IO_Multiplexing_Select.dir
+/Users/adilgadi/Desktop/CPP Projects/C_Web_Server_IO_Multiplexing/cmake-build-debug/CMakeFiles/C_Web_Server_IO_Multiplexing_Poll.dir
 /Users/adilgadi/Desktop/CPP Projects/C_Web_Server_IO_Multiplexing/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/adilgadi/Desktop/CPP Projects/C_Web_Server_IO_Multiplexing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
